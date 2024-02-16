@@ -5,6 +5,7 @@
     --font-family: 'Roboto Mono', monospace;
     --bg-color: #836FFF;
     --primary-color: #F0F3FF;
+    --color-black: #000;
 }
 
 body {
@@ -47,7 +48,7 @@ h3 {
     margin: 20px;
 }
 
-.btn-jogar {
+.btn-jogar, .btn-game-over {
     padding: 8px 15px;
     border: 2px solid var(--primary-color);
     background-color: transparent;
@@ -57,6 +58,11 @@ h3 {
     cursor: pointer;
     transition: .4s ease-in-out;
     font-size: 1.1em;
+}
+
+.btn-game-over:hover {
+    background-color: var(--primary-color);
+    color: var(--color-black);
 }
 
 .btn-jogar:hover {
